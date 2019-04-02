@@ -1,8 +1,8 @@
 /* 
 функции управления умным домом
 */
-#ifndef home_h
-#define home_h
+#ifndef BSPUSmartHomeLib_h
+#define BSPUSmartHomeLib_h
 #include "Arduino.h"
 #endif
 

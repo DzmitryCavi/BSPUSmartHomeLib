@@ -4,7 +4,7 @@
 
 
 #include "Arduino.h"
-#include "home.h"
+#include "BSPUSmartHomeLib.h"
 
 // переменные^
 // шторы
