@@ -11,12 +11,32 @@
 int in1 = 2; 
 int in2 = 3; 
 int in3 = 4; 
-int in4 = 5; 
+int in4 = 5;
+ 
 
 
+//Включить свет
+void LightON( int LihgtPin){
+digitalWrite(LihgtPin, LOW);
+}
 
+//Выключить свет
+void LightOFF( int LihgtPin){
+digitalWrite(LihgtPin, HIGH);
+}
 
+//Включить винт
+void CoolerON( int CoolerPin){
 
+digitalWrite(CoolerPin, LOW);
+
+}
+//Выключить винт винт
+void CoolerOFF(int CoolerPin){
+
+digitalWrite(CoolerPin, HIGH);
+
+}
 
 //Функция открывающая шторы
 void WindowOpen( int WindowLength, int WindowSpeed) {
