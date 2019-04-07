@@ -2,11 +2,12 @@
 
 // Исходный код библиотеки home
 
-
+#include <dht11.h>
 #include "Arduino.h"
 #include "BSPUSmartHomeLib.h"
 
-// переменные^
+// обьекты
+dht11 DHT11;
 // шторы
 int in1 = 2; 
 int in2 = 3; 
@@ -14,6 +15,34 @@ int in3 = 4;
 int in4 = 5;
  
 
+// Значение температуры
+int TempPrint(int tempPIN){
+  int chk = DHT11.read(tempPIN);
+   
+  return DHT11.temperature;
+  
+}
+//Значение влажности
+int HumPrint(int tempPIN){
+  int chk = DHT11.read(tempPIN);
+  
+  return DHT11.humidity;
+  
+}
+// Включение сигнала
+void SignalON(int SignalPin){
+for (int i=1; i<100; i++){
+  analogWrite(SignalPin, 300); 
+    delay(100);  
+  analogWrite(SignalPin, 0); 
+    delay(100); 
+  }
+  
+}
+// Выключение
+void SignalOFF(int SignalPin){
+analogWrite(SignalPin, 0); 
+}
 
 //Включить свет
 void LightON( int LihgtPin){

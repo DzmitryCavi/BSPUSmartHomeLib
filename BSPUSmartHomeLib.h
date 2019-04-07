@@ -14,5 +14,9 @@ void CoolerON(int CoolerPin);
 void CoolerOFF(int CoolerPin);
 void LightON(int LihgtPin);
 void LightOFF(int LihgtPin);
+void SignalON(int SignalPin);
+void SignalOFF(int SignalPin);
+int TempPrint(int tempPIN);
+int HumPrint(int tempPIN);
 
 
