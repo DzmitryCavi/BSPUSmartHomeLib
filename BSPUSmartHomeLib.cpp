@@ -8,6 +8,7 @@
 
 // обьекты
 dht11 DHT11;
+
 // шторы
 int in1 = 2; 
 int in2 = 3; 
@@ -31,7 +32,7 @@ int HumPrint(int tempPIN){
 }
 // Включение сигнала
 void SignalON(int SignalPin){
-for (int i=1; i<100; i++){
+for (int i=1; i<15; i++){
   analogWrite(SignalPin, 300); 
     delay(100);  
   analogWrite(SignalPin, 0); 
