@@ -32,12 +32,11 @@ int HumPrint(int tempPIN){
 }
 // Включение сигнала
 void SignalON(int SignalPin){
-for (int i=1; i<15; i++){
-  analogWrite(SignalPin, 300); 
-    delay(100);  
-  analogWrite(SignalPin, 0); 
-    delay(100); 
-  }
+analogWrite(SignalPin,200);
+delay(500);
+analogWrite(SignalPin,0);
+delay(500);
+
   
 }
 // Выключение
