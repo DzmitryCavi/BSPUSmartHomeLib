@@ -8,8 +8,8 @@
 
 
 
-void WindowOpen(int WindowLength, int WindowSpeed);
-void WindowClose(int WindowLength, int WindowSpeed);
+void WindowOpen(int in1, int in2, int in3, int in4, int WindowLength, int WindowSpeed);
+void WindowClose(int in1, int in2, int in3, int in4, int WindowLength, int WindowSpeed);
 void CoolerON(int CoolerPin);
 void CoolerOFF(int CoolerPin);
 void LightON(int LihgtPin);

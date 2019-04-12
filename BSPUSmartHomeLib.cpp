@@ -9,11 +9,6 @@
 // обьекты
 dht11 DHT11;
 
-// шторы
-int in1 = 2; 
-int in2 = 3; 
-int in3 = 4; 
-int in4 = 5;
  
 
 // Значение температуры
@@ -68,7 +63,7 @@ digitalWrite(CoolerPin, HIGH);
 }
 
 //Функция открывающая шторы
-void WindowOpen( int WindowLength, int WindowSpeed) {
+void WindowOpen(int in1, int in2, int in3, int in4, int WindowLength, int WindowSpeed) {
    for(int i=1; i < WindowLength; i++){ 
   digitalWrite( in1, LOW ); 
   digitalWrite( in2, LOW ); 
@@ -114,7 +109,7 @@ void WindowOpen( int WindowLength, int WindowSpeed) {
   
   }
  //Функция закрывающая шторы
-void WindowClose(int WindowLength, int WindowSpeed) {
+void WindowClose(int in1, int in2, int in3, int in4, int WindowLength, int WindowSpeed) {
   for(int j=1; j < WindowLength ;j++){ 
     digitalWrite( in1, LOW ); 
   digitalWrite( in2, LOW ); 
